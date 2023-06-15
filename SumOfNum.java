@@ -9,7 +9,7 @@ public class SumOfNum{
 }
     public static void main(String []args){
     SumOfNum obj = new SumOfNum();
-    obj.Sum(9,6);
+    obj.getTotal(9,6);
 
 }
 }
