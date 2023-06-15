@@ -1,6 +1,6 @@
 
 public class SumOfNum{
-   public int Sum(int a,int b){
+   public int getTotal(int a,int b){
 
  int sum = a+b;
   System.out.println("The sum of two numbers is:"+sum);
