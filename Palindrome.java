@@ -1,20 +1,23 @@
-public class Pattern3{
-  public static void main(String[] args){
-    int i,j;
-	for(i=5;i>=1;i--){
-		for(j=i;j>=0;j--)
-		{
-		 System.out.print("*");
-		}
-		System.out.println();
-
+import java.util.Scanner;
+public class Palindrome{
+	public static void main(String arg[])	
+	{
+	    int num,temp,reverse,rem;
+             	    Scanner sc=new Scanner(System.in);
+	    System.out.println("Enter any number ");
+                   num=sc.nextInt();
+	    temp=num;
+	    for(reverse=0 ; num>0 ; num/=10)
+	    {
+	    rem=num%10;
+	    reverse = (reverse*10)+rem;
+	    }
+	   if(reverse==temp){
+		System.out.println(temp+" is a palindrome number ");
+}
+                  else{
+		System.out.println(temp+" is not a palindrome number ");
+}
+                  
 	}
-		for(i=1;i<=6;i++){
-			for(j=1;j<=i;j++)
-			{
-			  System.out.print("*");
-			}
-	System.out.println();
-		}
-  }
 }
